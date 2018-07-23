@@ -35,7 +35,6 @@ export class AppService {
     );
   }
 
-
     saveToken(token) {
       var expirateDate = new Date().getTime() + (1000 * token.expires_in);
       Cookie.set("access_token", token.access_token, expirateDate);
